@@ -54,6 +54,9 @@ h1{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(46px,7.4v
 .sec.stack{grid-template-columns:minmax(0,1fr)}
 h2{margin:0;font:400 clamp(40px,3.7vw,68px)/1.05 var(--display)}
 .sec-zh{display:block;margin-top:4px;font:400 1.1em var(--cjk);color:var(--wood-text)}
+.quip{margin:14px 0 0;max-width:15em;font:italic 400 1.15em/1.35 var(--display);color:var(--wood-text)}
+footer .quip{margin:0;max-width:none;color:var(--cream)}
+html[lang="zh-Hant"] .quip{font:400 .95em/1.6 var(--cjk)}
 .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:clamp(32px,3vw,56px) clamp(32px,3.5vw,72px)}
 .items.four{grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:32px 40px}
 .item{display:flex;flex-direction:column;gap:6px}
@@ -133,7 +136,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 </header>
 
 <section class="sec" id="education">
-  <div><h2 data-zh="學歷">Education</h2><span class="sec-zh" data-zh="Education" lang="zh-Hant">學歷</span></div>
+  <div><h2 data-zh="學歷">Education</h2><span class="sec-zh" data-zh="Education" lang="zh-Hant">學歷</span><p class="quip" data-zh="預訓練階段。">Pretraining.</p></div>
   <div class="items">
     <div class="item">
       <h3 data-zh="國立臺灣大學">National Taiwan University</h3>
@@ -146,7 +149,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 </section>
 
 <section class="sec" id="research">
-  <div><h2 data-zh="研究">Research</h2><span class="sec-zh" data-zh="Research" lang="zh-Hant">研究</span></div>
+  <div><h2 data-zh="研究">Research</h2><span class="sec-zh" data-zh="Research" lang="zh-Hant">研究</span><p class="quip" data-zh="仍在訓練中。">Still training.</p></div>
   <div class="items">
     <div class="item">
       <h3 data-zh="語音處理與機器學習實驗室">Speech Processing and Machine Learning Lab</h3>
@@ -172,7 +175,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 </section>
 
 <section class="sec panel" id="papers">
-  <div><h2 data-zh="論文">Publications</h2><span class="sec-zh" data-zh="Publications" lang="zh-Hant">論文</span></div>
+  <div><h2 data-zh="論文">Publications</h2><span class="sec-zh" data-zh="Publications" lang="zh-Hant">論文</span><p class="quip" data-zh="目前存了三個 checkpoint。">Three checkpoints saved so far.</p></div>
   <div class="papers">
     <div class="paper">
       <span class="title">Nudging Hidden States: Training-Free Model Steering for Chain-of-Thought Reasoning in Large Audio-Language Models</span>
@@ -190,7 +193,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 </section>
 
 <section class="sec" id="teaching">
-  <div><h2 data-zh="教學">Teaching</h2><span class="sec-zh" data-zh="Teaching" lang="zh-Hant">教學</span></div>
+  <div><h2 data-zh="教學">Teaching</h2><span class="sec-zh" data-zh="Teaching" lang="zh-Hant">教學</span><p class="quip" data-zh="給人類用的梯度下降。">Gradient descent for humans.</p></div>
   <div class="items">
     <div class="item">
       <h3 data-zh="深度學習與人類語言處理">Deep Learning for Human Language Processing</h3>
@@ -206,7 +209,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 </section>
 
 <section class="sec" id="projects">
-  <div><h2 data-zh="作品">Projects</h2><span class="sec-zh" data-zh="Projects and awards" lang="zh-Hant">作品與獎項</span></div>
+  <div><h2 data-zh="作品">Projects</h2><span class="sec-zh" data-zh="Projects and awards" lang="zh-Hant">作品與獎項</span><p class="quip" data-zh="那些讓我過擬合了一整個學期的東西。">Things I overfit to for a semester.</p></div>
   <div class="items">
     <div class="item">
       <h3 data-zh="AI 智慧示波器">AI smart oscilloscope</h3>
@@ -251,6 +254,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 
 <footer>
   <span>sarah.cheng.1690@gmail.com</span>
+  <span class="quip" data-zh="尚無 early stopping 的打算。">No early stopping planned.</span>
   <a href="https://github.com/ione3201">github.com/ione3201</a>
 </footer>
 </div>
