@@ -39,8 +39,10 @@ nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between
 .lang button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--cinnabar)}
 .lang .slash{color:var(--muted)}
 
-.banner{display:block;width:100%;height:clamp(110px,14vw,260px);object-fit:cover;padding:8px 0;border-top:1.5px solid var(--wood);border-bottom:1.5px solid var(--wood)}
+.banner{display:block;width:100%;height:clamp(80px,9.5vw,170px);object-fit:cover;padding:8px 0;border-top:1.5px solid var(--wood);border-bottom:1.5px solid var(--wood)}
 
+.banner.second{object-position:50% 85%;transform:scaleX(-1)}
+#education{border-top:0}
 .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px clamp(40px,6vw,120px);padding:clamp(40px,5vw,88px) 0 clamp(56px,6vw,104px)}
 .hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
 .name-row{display:flex;align-items:flex-start;gap:28px}
@@ -125,7 +127,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
 
 <img class="banner" src="floral.jpg" alt="">
 
-<div class="wrap">
+<div class="wrap top">
 
 <header class="hero" id="top">
   <div class="hero-text">
@@ -138,6 +140,11 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
   </div>
   <div class="medallion"><span>[你的照片<br>Your photo]</span></div>
 </header>
+</div>
+
+<img class="banner second" src="floral.jpg" alt="">
+
+<div class="wrap">
 
 <section class="sec" id="education">
   <div><h2 data-zh="學歷">Education</h2><span class="sec-zh" data-zh="Education" lang="zh-Hant">學歷</span><p class="quip" data-zh="預訓練階段。">Pretraining.</p></div>
