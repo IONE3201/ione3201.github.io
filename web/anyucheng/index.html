@@ -52,7 +52,7 @@ h1{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(46px,7.4v
 .statement{margin:12px 0 0;max-width:22em;font-family:var(--display);font-style:italic;font-size:clamp(26px,2.9vw,48px);line-height:1.3;text-wrap:pretty;white-space:pre-line}
 .sub{margin:0;max-width:30em;color:var(--muted)}
 .portrait{position:relative;flex:0 1 clamp(270px,31vw,520px);aspect-ratio:10/13}
-.medallion{position:absolute;inset:12.2%;border-radius:999px;overflow:hidden;background:var(--putty)}
+.medallion{position:absolute;inset:12.2%;border-radius:50%;overflow:hidden;background:var(--putty)}
 .medallion img{display:block;width:100%;height:100%;object-fit:cover}
 .frame{position:absolute;inset:0;width:100%;height:100%}
 
@@ -96,6 +96,8 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
   .banner{padding:6px 0}
   .name-row{gap:16px}
   .portrait{margin:0 auto}
+  .frame{stroke-width:.85}
+  .frame ellipse[stroke-dasharray]{stroke-width:1.7}
   .sec{grid-template-columns:minmax(0,1fr)}
   .links{gap:0 22px}
   nav{padding:18px 0}
@@ -144,7 +146,7 @@ html[lang="zh-Hant"] .links a{letter-spacing:.08em}
     <p class="sub" data-zh="國立臺灣大學電機工程學系學生，預計 2027 年 6 月畢業。研究興趣是大型語音語言模型、視覺語言動作模型，以及高效率的推論與訓練。">Electrical engineering student at National Taiwan University, graduating June 2027. Interested in large audio-language models, vision-language-action models, and efficient inference and training.</p>
   </div>
   <div class="portrait">
-<div class="medallion"><img src="portrait.jpg" alt="An-Yu Sarah Cheng"></div>
+<div class="medallion"><img src="portrait-wide.jpg" alt="An-Yu Sarah Cheng"></div>
 <svg class="frame" aria-hidden="true" viewBox="0 0 1000 1300" fill="none" stroke="#6B4A32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
 <ellipse vector-effect="non-scaling-stroke" cx="500" cy="650" rx="392" ry="507"/>
 <ellipse vector-effect="non-scaling-stroke" cx="500" cy="650" rx="401" ry="518" stroke-width="2.6" stroke-dasharray="0.1 9"/>
